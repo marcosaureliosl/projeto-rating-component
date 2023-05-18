@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --secondary: hsl(213deg, 20%, 22%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+.hidden {
+  display: none;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Very-Dark-Blue);
+}
+.card {
+  background-color: var(--Dark-Blue);
+  border-radius: 1rem;
+  width: 350px;
+}
+.card_container {
+  padding: 2rem;
+}
+.star_icon {
+  background-color: var(--secondary);
+  width: fit-content;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.title {
+  color: var(--White);
+  margin-bottom: 1rem;
+}
+.description {
+  font-size: 14px;
+  color: var(--Medium-Grey);
+  margin-bottom: 1rem;
+}
+.ratings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.ratings span {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary);
+  border-radius: 50%;
+  color: var(--Medium-Grey);
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.ratings span:hover {
+  background-color: var(--Light-Grey);
+  color: var(--White);
+}
+.submit_btn {
+  width: 100%;
+  color: var(--White);
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--Orange);
+  padding: 0.7rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.submit_btn:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+.thank_section {
+  text-align: center;
+}
+.chip {
+  background-color: var(--secondary);
+  width: fit-content;
+  margin: 1rem auto;
+  color: var(--Orange);
+  font-size: 14px;
+  padding: 0.7rem;
+  border-radius: 2rem;
+}
+.checked {
+  background-color: var(--Orange) !important;
+  color: var(--White) !important;
+}
