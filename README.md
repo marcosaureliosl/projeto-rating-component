@@ -1,6 +1,7 @@
 # Frontend Mentor - Interactive rating component solution
 
 This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+![Design sem nome](https://github.com/marcosaureliosl/projeto-rating-component/assets/127764997/804c27f5-ee4b-4cb7-8adb-04f4ad722976)
 
 ## Table of contents
 
@@ -20,29 +21,11 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### The challenge
 
-Users should be able to:
-
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Select and submit a number rating
-- See the "Thank you" card state after submitting a rating
-
-### Screenshot
-
-![](./screenshot.jpg)
-
-
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [projeto-rating-component](https://marcosaureliosl.github.io/projeto-rating-component/)
+- Live Site URL: [meu GitHub](https://github.com/marcosaureliosl/projeto-rating-component)
 
 ## My process
 
@@ -55,7 +38,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Mobile-first workflow
 
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+
 
 ### What I learned
 
@@ -64,46 +47,47 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<h1><Div class="card">
+    <div class="card_container">
+      <div class="rating_section">
+        <div class="star_icon">
+          <img src="./images/icon-star.svg" alt="star">
+        </div></h1>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --secondary: hsl(213deg, 20%, 22%);
 }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+const rating_cards = document.querySelectorAll(".ratings span");
+const submit_btn = document.querySelector(".submit_btn");
+const rate_point = document.getElementById("rate");
+const rating_section = document.querySelector(".rating_section");
+const thank_section = document.querySelector(".thank_section");
+let rate = null;
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
+Quero me desenvolver mias na liguagem do JavaScript,  tentar trazer mais soluções neste caminho
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@marcosaureliosl](https://www.frontendmentor.io/profile/marcosaureliosl)
+- Twitter - [@marcosaureliosl](https://www.twitter.com/marcosaureliosl)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Obrigado a todos que me da apoio.
